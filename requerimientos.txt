@@ -1,0 +1,6 @@
+REQUERIMIENTOS:
+1. No debe tener scroll la pagina principal.
+2. Ver asignacion por la pagina de edtecnica.
+3. El texto no debe romperse al momento de que el usuario escribe mucho texto.
+
+La pagina tiene que subirse a github y a su vez a github pages.

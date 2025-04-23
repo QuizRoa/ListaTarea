@@ -1,0 +1,295 @@
+*{
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  background-color: rgba(236, 229, 229, 0.384);
+}
+body{
+  overflow: hidden;
+}
+.size-6{
+  background-color: #18aa49;
+  border: 1px solid black;
+
+}
+.size-7{
+  background-color: #db2020;
+  border: 1px solid black;
+
+}
+.size-7:hover{
+  background-color: #b81717;
+
+}
+.btns-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.size-6:hover{
+  background-color: #128639;
+
+}
+.size-8{
+  background-color: #ddeb22;
+  border: 1px solid black;
+
+}
+.size-8:hover{
+  background-color: #c7d31b;
+
+}
+#main{
+  margin: 2rem;
+  padding: 1rem;
+}
+
+#title{
+    background-color: #012d26;
+    text-align: center;
+}
+
+h1{
+  background-color: #15759b;
+  padding: 2rem;
+  font-size: 1.8rem;  
+  color:black;
+  
+}
+.input-valid {
+  outline: 1px solid green;
+}
+
+.input-invalid {
+  outline : 1px solid red;
+}
+
+.show-helper-text{
+  display: block;
+}
+
+#task-input{
+  background-color: beige;
+  padding: 0.5rem;
+  width: 100%;
+  border: 0.1rem solid black;
+}
+
+#main-form-button{
+  width: 100%;
+  background-color: #15759b;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  color:white;
+}
+
+#main-form-button:hover{
+  background-color: #0e5774;
+}
+
+.main-form-helper-text{
+  color: red;
+  font-size: 0.8rem; 
+}
+#task-list{
+  list-style: none;
+  padding: 1rem;
+  overflow: auto;
+  max-height: 300px;
+  border: 0.1rem solid black;
+}
+
+.task-item{
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-item-delete-button{
+  
+  padding: 0.3rem;
+  width: 5rem;
+}
+.task-item-delete-button:hover{
+  
+  padding: 0.3rem;
+}
+.task-item-check-button{
+  padding: 0.3rem;
+  width: 5rem;
+}
+
+#task-counters{
+  margin-top: 0.5rem;
+  text-align: center;
+  padding: 0.3rem;
+  background-color: #496774;
+  color: white;
+}
+
+.task-item-text{
+  display: flex;
+  width: 100%;
+  text-align: justify;
+  padding: 0.3rem;
+  outline: none;
+}
+
+/* Responsive */
+
+@media(max-width: 768px){
+  #main{
+    margin: 1rem;
+  }
+
+  h1{
+    padding: 1.5rem;
+    font-size: 1.5rem;
+  }
+  #task-input{
+    padding: 0.4rem;
+  }
+  /* .task-item {
+    flex-direction: column;
+    align-items: flex-start; 
+  } */
+  /* .task-item-delete-button,
+  .task-item-check-button {
+    margin-top: 0.5rem;
+    width: 100%; 
+  }*/
+} 
+@media (max-width: 480px) {
+  #main {
+    margin: 0.5rem; 
+  }
+
+  h1 {
+    font-size: 1.2rem; 
+    padding: 1rem;
+  }
+
+  #task-input {
+    padding: 0.3rem; 
+  }
+
+  #main-form-button {
+    padding: 0.4rem; 
+  }
+
+  #task-list {
+    max-height: 200px; 
+  }
+
+  /* .task-item {
+    flex-direction: column; 
+    margin-bottom: 0.5rem;
+  } */
+
+  .task-item-delete-button,
+  .task-item-check-button {
+    width: 100%; 
+    margin-top: 0.5rem;
+  }
+}
+@media (prefers-color-scheme: dark) {
+
+*{
+  background-color: #487e67;
+}
+  body {
+  
+      color: white;
+  }
+  #title{
+    background-color: #3d3d3d;
+    text-align: center;
+    color: white;
+}
+
+h1{
+  background-color: #3d3d3d;
+  padding: 2rem;
+  font-size: 1.8rem;  
+  
+}
+
+#task-input{
+  background-color: rgb(170, 170, 159);
+  padding: 0.5rem;
+  width: 100%;
+  border: 0.1rem solid white;
+}
+
+#main-form-button{
+  width: 100%;
+  background-color: #053028;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+
+}
+
+#main-form-button:hover{
+  background-color: #05604f;
+}
+
+.main-form-helper-text{
+  color: red;
+}
+
+#task-list{
+  list-style: none;
+  padding: 1rem;
+  overflow: auto;
+  max-height: 300px;
+  border: 0.1rem solid black;
+}
+
+.task-item{
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+}
+
+@media (min-width: 1524px) and (max-width: 2560px) {
+  /* Estilos para pantallas de 24 a 32 pulgadas */
+  #main {
+    margin: 5rem; 
+  }
+
+  h1 {
+    font-size: 2.2rem; 
+    padding: 1rem;
+  }
+
+  #task-input {
+    padding: 0.9rem; 
+  }
+
+  #main-form-button {
+    padding: 1.2rem; 
+  }
+
+  #task-list {
+    max-height: 600px; 
+  }
+
+  .task-item {
+
+    margin-bottom: 0.5rem;
+  }
+
+  .task-item-delete-button,
+  .task-item-check-button {
+    width: 25%; 
+    margin-top: 0.5rem;
+  }
+}
